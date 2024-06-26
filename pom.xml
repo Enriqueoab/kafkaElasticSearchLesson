@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.3.1</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.microservices.base</groupId>
+	<artifactId>microservices-base</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>microservices-base</name>
+	<description>Project for the microservices base config</description>
+<!--	As base project the packaging shouldn't be jar but pom instead	-->
+<!--	That imply that we will use this pom as configuration base and not as -->
+<!--	runnable jar -->
+	<packaging>pom</packaging>
+	<url/>
+	<licenses>
+		<license/>
+	</licenses>
+	<developers>
+		<developer/>
+	</developers>
+	<scm>
+		<connection/>
+		<developerConnection/>
+		<tag/>
+		<url/>
+	</scm>
+	<properties>
+		<java.version>21</java.version>
+<!--	Created tag so the submodules don't need to include the version tag in their dependencies	-->
+<!--	Don't forget to add the version tag to these dependencies and plugins project	-->
+		<spring-boot.version>3.3.1</spring-boot.version>
+		<maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
+	</properties>
+<!--	dependencyManagement help us to define dependencies without downloading them	-->
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter</artifactId>
+				<version>${spring-boot.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-test</artifactId>
+				<version>${spring-boot.version}</version>
+				<scope>test</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+
+	<build>
+<!--	pluginManagement so submodules will create a plugins section without setting the version	-->
+<!--	but setting any property or goals for the task "spring-boot-maven-plugin" itself	-->
+<!--	spring-boot-maven-plugin, It can create executable archive files such as Jar files or War files, that contain all application
+dependencies, and can be run with a single java -jar command.
+This behavior comes by just including the plugin itself, because it is pre-configured to create target
+runnable jar.
+In addition, this plugin helps to run Spring boot applications, generate build informations,
+and start your spring boot application prior to running integration tests.
+And finally, it helps to create docker images with the build-image goal, which comes with spring boot
+2.3.0 release.
+We will actually be using this property to create docker images for our microservices in the coming
+lectures.	-->
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-maven-plugin</artifactId>
+					<version>${spring-boot.version}</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+		<plugins>
+			<plugin>
+<!--	By default, maven uses Java 1.6 version for source and target settings.
+	And since we need to use Java 21, we will use maven compiler plugin to set this property.
+	is outside pluginManagement as we need the plugin app wide, so we can define it here to be used in submodules
+	without override-->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-plugin.version}</version>
+				<configuration>
+<!--	Starting from java 9 we have to use the release property. Instead of source and target	-->
+				<release>21</release>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
