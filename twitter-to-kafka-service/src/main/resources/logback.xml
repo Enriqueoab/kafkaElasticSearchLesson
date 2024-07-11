@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property name="DEV_HOME" value="./twitter-to-kafka-service/logs"/>
+    <property name="APP_NAME" value="twitter-to-kafka-service"/>
+
+    <!-- Write logs to console -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>
+                %d{yyyy-MM-dd HH:mm:ss} %-5level [%thread] %logger{36} - %msg%n
+            </Pattern>
+        </layout>
+    </appender>
+
+    <!-- Write logs to a file -->
+    <appender name="FILE"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${DEV_HOME}/${APP_NAME}.log</file>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+
+    <!-- TODO: log and a file pattern
+         the class name, thread ID, time and the log level in the message -->
+            <Pattern>
+                %d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n
+            </Pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+
+            <!-- rollover daily -->
+            <fileNamePattern>
+                ${DEV_HOME}/archived/${APP_NAME}-log.%d{yyyy-MM-dd}.%i.log
+            </fileNamePattern>
+    <!-- TODO: We have a rolling policy to create a new file and compress and keep the old one after
+         the file reaches a certain size (10MB) -->
+            <timeBasedFileNamingAndTriggeringPolicy
+                    class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>10MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+    </appender>
+
+    <!-- TODO: we set two appenders, defined here to all classes that starts with
+    com.microservices.base package. That actually means that, our all
+    application classes will be logged by using those two appenders -->
+
+    <!--  we can actually define different log levels like trace, Debug, info, warn
+    And error for our logger level definition. If you define a lower level , it will
+    also print the higher levels. That means Trace level will print all the log messages defined in the code.
+
+    However, if you set the level as error, all the messages, except error will be ignored.
+    This way we can control in the configuration how much work will be printed. In production, for example,
+    You won't want to include that much logging, as it can affect the performance of your application
+    because of higher cost.  -->
+
+    <logger name="com.microservices.base" level="info" additivity="false">
+        <appender-ref ref="FILE"/>
+        <appender-ref ref="STDOUT"/>
+    </logger>
+
+    <!-- TODO: the root logger will set the log level as a root, which can be overwritten using a specific logger  -->
+    <root level="info">
+        <appender-ref ref="FILE"/>
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+</configuration>

@@ -1,0 +1,16 @@
+2024-07-07 06:56:50 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservices.base.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTest]: TwitterToKafkaServiceApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-07-07 06:56:51 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservices.base.twitter.to.kafka.service.TwitterToKafkaServiceApplication for test class com.microservices.base.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTest
+2024-07-07 06:56:51 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplicationTest - Starting TwitterToKafkaServiceApplicationTest using Java 17.0.10 with PID 7900 (started by 34634 in C:\Users\34634\IdeaProjects\KafkaElasticMicroLesson\microservices-base\twitter-to-kafka-service)
+2024-07-07 06:56:51 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplicationTest - No active profile set, falling back to 1 default profile: "default"
+2024-07-07 06:56:52 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplicationTest - Started TwitterToKafkaServiceApplicationTest in 1.16 seconds (process running for 2.845)
+2024-07-07 06:56:52 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - App starting.........
+2024-07-07 06:56:52 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - [Java, kafka, Spring, kubernetes, Microservices, Elasticsearch]
+2024-07-07 06:56:52 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - Welcome to my lesson application
+2024-07-07 06:56:52 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-07-07 06:56:52 [main] INFO  c.m.b.t.t.k.s.r.i.TwitterKafkaStreamRunnerImp - Filtering twitter stream for keywords [Java, kafka, Spring, kubernetes, Microservices, Elasticsearch]
+2024-07-07 06:56:53 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-07-07 06:56:53 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 250 milliseconds
+2024-07-07 06:56:53 [Twitter Stream consumer /  [1][Waiting for 250 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-07-07 06:56:53 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-07-07 06:56:53 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 500 milliseconds
+2024-07-07 06:56:54 [SpringApplicationShutdownHook] INFO  c.m.b.t.t.k.s.r.i.TwitterKafkaStreamRunnerImp - Closing twitterStream instance..

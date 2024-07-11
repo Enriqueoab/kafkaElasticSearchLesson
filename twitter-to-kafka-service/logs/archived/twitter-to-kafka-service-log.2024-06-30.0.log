@@ -1,0 +1,66 @@
+2024-06-30 06:26:24 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 21.0.3 with PID 17280 (C:\Users\34634\IdeaProjects\KafkaElasticMicroLesson\microservices-base\twitter-to-kafka-service\target\classes started by 34634 in C:\Users\34634\IdeaProjects\KafkaElasticMicroLesson\microservices-base)
+2024-06-30 06:26:24 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-30 06:26:24 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'twitterToKafkaServiceConfigData': Could not bind properties to 'TwitterToKafkaServiceConfigData' : prefix=twitter-to-kafka-service, welcome, ignoreInvalidFields=false, ignoreUnknownFields=true
+2024-06-30 06:26:24 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-30 06:26:24 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Configuration property name 'twitter-to-kafka-service, welcome' is not valid:
+
+    Invalid characters: ',', ' '
+    Bean: twitterToKafkaServiceApplication
+    Reason: Canonical names should be kebab-case ('-' separated), lowercase alpha-numeric characters and must start with a letter
+
+Action:
+
+Modify 'twitter-to-kafka-service, welcome' so that it conforms to the canonical names requirements.
+
+2024-06-30 06:26:26 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 21.0.3 with PID 19272 (C:\Users\34634\IdeaProjects\KafkaElasticMicroLesson\microservices-base\twitter-to-kafka-service\target\classes started by 34634 in C:\Users\34634\IdeaProjects\KafkaElasticMicroLesson\microservices-base)
+2024-06-30 06:26:26 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-30 06:26:27 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'twitterToKafkaServiceConfigData': Could not bind properties to 'TwitterToKafkaServiceConfigData' : prefix=twitter-to-kafka-service, welcome, ignoreInvalidFields=false, ignoreUnknownFields=true
+2024-06-30 06:26:27 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-30 06:26:27 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Configuration property name 'twitter-to-kafka-service, welcome' is not valid:
+
+    Invalid characters: ',', ' '
+    Bean: twitterToKafkaServiceApplication
+    Reason: Canonical names should be kebab-case ('-' separated), lowercase alpha-numeric characters and must start with a letter
+
+Action:
+
+Modify 'twitter-to-kafka-service, welcome' so that it conforms to the canonical names requirements.
+
+2024-06-30 06:27:51 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 21.0.3 with PID 11612 (C:\Users\34634\IdeaProjects\KafkaElasticMicroLesson\microservices-base\twitter-to-kafka-service\target\classes started by 34634 in C:\Users\34634\IdeaProjects\KafkaElasticMicroLesson\microservices-base)
+2024-06-30 06:27:51 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-30 06:27:52 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.151 seconds (process running for 1.846)
+2024-06-30 06:27:52 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - App starting.........
+2024-06-30 06:27:52 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - [Java, kafka, Spring, kubernetes, Microservices, Elasticsearch]
+2024-06-30 06:27:52 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - null
+2024-06-30 06:28:47 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 21.0.3 with PID 21428 (C:\Users\34634\IdeaProjects\KafkaElasticMicroLesson\microservices-base\twitter-to-kafka-service\target\classes started by 34634 in C:\Users\34634\IdeaProjects\KafkaElasticMicroLesson\microservices-base)
+2024-06-30 06:28:47 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-30 06:28:48 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.209 seconds (process running for 1.843)
+2024-06-30 06:28:48 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - App starting.........
+2024-06-30 06:28:48 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - [Java, kafka, Spring, kubernetes, Microservices, Elasticsearch]
+2024-06-30 06:28:48 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - null
+2024-06-30 06:32:23 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 21.0.3 with PID 14396 (C:\Users\34634\IdeaProjects\KafkaElasticMicroLesson\microservices-base\twitter-to-kafka-service\target\classes started by 34634 in C:\Users\34634\IdeaProjects\KafkaElasticMicroLesson\microservices-base)
+2024-06-30 06:32:23 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-30 06:32:24 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.18 seconds (process running for 1.83)
+2024-06-30 06:32:24 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - App starting.........
+2024-06-30 06:32:24 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - [Java, kafka, Spring, kubernetes, Microservices, Elasticsearch]
+2024-06-30 06:32:24 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - Welcome to my lesson application
