@@ -1,0 +1,51 @@
+2024-07-09 07:47:08 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 21.0.3 with PID 22780 (C:\Users\34634\IdeaProjects\KafkaElasticMicroLesson\microservices-base\twitter-to-kafka-service\target\classes started by 34634 in C:\Users\34634\IdeaProjects\KafkaElasticMicroLesson\microservices-base)
+2024-07-09 07:47:08 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-09 07:47:09 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.827 seconds (process running for 2.961)
+2024-07-09 07:47:09 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - App starting.........
+2024-07-09 07:47:09 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - [Java, kafka, Spring, kubernetes, Microservices, Elasticsearch]
+2024-07-09 07:47:09 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - Welcome to my lesson application
+2024-07-09 07:47:09 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-07-09 07:47:09 [main] INFO  c.m.b.t.t.k.s.r.i.TwitterKafkaStreamRunnerImp - Filtering twitter stream for keywords [Java, kafka, Spring, kubernetes, Microservices, Elasticsearch]
+2024-07-09 07:47:10 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-07-09 07:47:10 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 250 milliseconds
+2024-07-09 07:47:10 [Twitter Stream consumer /  [1][Waiting for 250 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-07-09 07:47:11 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-07-09 07:47:11 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 500 milliseconds
+2024-07-09 07:47:11 [Twitter Stream consumer /  [1][Waiting for 500 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-07-09 07:47:12 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-07-09 07:47:12 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 1000 milliseconds
+2024-07-09 07:47:13 [Twitter Stream consumer /  [1][Waiting for 1000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-07-09 07:47:13 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-07-09 07:47:13 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 2000 milliseconds
+2024-07-09 07:47:15 [Twitter Stream consumer /  [1][Waiting for 2000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-07-09 07:47:15 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-07-09 07:47:15 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 4000 milliseconds
+2024-07-09 07:47:19 [Twitter Stream consumer /  [1][Waiting for 4000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-07-09 07:47:19 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-07-09 07:47:19 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 8000 milliseconds
+2024-07-09 07:47:27 [Twitter Stream consumer /  [1][Waiting for 8000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-07-09 07:47:28 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-07-09 07:47:28 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-07-09 07:47:44 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-07-09 07:47:44 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-07-09 07:47:44 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-07-09 07:48:00 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-07-09 07:48:01 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-07-09 07:48:01 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-07-09 07:48:17 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-07-09 07:48:17 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-07-09 07:48:17 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-07-09 07:48:18 [SpringApplicationShutdownHook] INFO  c.m.b.t.t.k.s.r.i.TwitterKafkaStreamRunnerImp - Closing twitterStream instance..
+2024-07-09 07:48:24 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 21.0.3 with PID 22468 (C:\Users\34634\IdeaProjects\KafkaElasticMicroLesson\microservices-base\twitter-to-kafka-service\target\classes started by 34634 in C:\Users\34634\IdeaProjects\KafkaElasticMicroLesson\microservices-base)
+2024-07-09 07:48:24 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-09 07:48:25 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.551 seconds (process running for 2.456)
+2024-07-09 07:48:25 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - App starting.........
+2024-07-09 07:48:25 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - [Java, kafka, Spring, kubernetes, Microservices, Elasticsearch]
+2024-07-09 07:48:25 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - Welcome to my lesson application
+2024-07-09 07:48:25 [main] INFO  c.m.b.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, kafka, Spring, kubernetes, Microservices, Elasticsearch]
+2024-07-09 07:48:25 [pool-1-thread-1] INFO  c.m.b.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status: amet congue Maecenas dolor dolor congue Spring posuere ultricies Lorem Maecenas
+2024-07-09 07:48:35 [pool-1-thread-1] INFO  c.m.b.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status: Lorem purus porttitor massa elit Maecenas purus kafka magna pulvinar congue Maecenas consectetuer purus
+2024-07-09 07:48:45 [pool-1-thread-1] INFO  c.m.b.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status: Fusce ultricies congue libero massa kafka sed ultricies ipsum ipsum
+2024-07-09 07:48:55 [pool-1-thread-1] INFO  c.m.b.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status: pulvinar sit adipiscing lectus pulvinar Spring posuere ipsum Maecenas pulvinar
+2024-07-09 07:49:05 [pool-1-thread-1] INFO  c.m.b.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status: sed malesuada posuere Elasticsearch posuere libero
+2024-07-09 07:49:15 [pool-1-thread-1] INFO  c.m.b.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status: malesuada elit ultricies posuere lectus porttitor adipiscing kafka pulvinar sed sed purus Fusce

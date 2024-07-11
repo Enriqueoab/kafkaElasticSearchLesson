@@ -13,9 +13,12 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>microservices-base</name>
 	<description>Project for the microservices base config</description>
-<!--	As base project the packaging shouldn't be jar but pom instead	-->
-<!--	That imply that we will use this pom as configuration base and not as -->
-<!--	runnable jar -->
+	<modules>
+		<module>twitter-to-kafka-service</module>
+	</modules>
+	<!-- TODO:	As base project the packaging shouldn't be jar but pom instead	-->
+	<!--	That imply that we will use this pom as configuration base and not as -->
+	<!--	runnable jar -->
 	<packaging>pom</packaging>
 	<url/>
 	<licenses>
@@ -31,13 +34,16 @@
 		<url/>
 	</scm>
 	<properties>
-		<java.version>21</java.version>
-<!--	Created tag so the submodules don't need to include the version tag in their dependencies	-->
+		<java.version>17</java.version>
+<!--	TODO: Created tag so the submodules don't need to include the version tag in their dependencies	-->
 <!--	Don't forget to add the version tag to these dependencies and plugins project	-->
+		<java.version>17</java.version>
+		<lombok.version>1.18.30</lombok.version>
+		<twitter4j.version>4.0.7</twitter4j.version>
 		<spring-boot.version>3.3.1</spring-boot.version>
 		<maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
 	</properties>
-<!--	dependencyManagement help us to define dependencies without downloading them	-->
+<!--	TODO: dependencyManagement help us to define dependencies without downloading them	-->
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -51,19 +57,44 @@
 				<artifactId>spring-boot-starter-test</artifactId>
 				<version>${spring-boot.version}</version>
 				<scope>test</scope>
+				<exclusions>
+					<exclusion>
+						<groupId>org.junit.vintage</groupId>
+						<artifactId>junit-vintage-engine</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
+
+			<!-- twitter4j-stream -->
+			<dependency>
+				<groupId>org.twitter4j</groupId>
+				<artifactId>twitter4j-stream</artifactId>
+				<version>${twitter4j.version}</version>
+			</dependency>
+
+			<!-- Lombok -->
+			<dependency>
+				<groupId>org.projectlombok</groupId>
+				<artifactId>lombok</artifactId>
+				<version>${lombok.version}</version>
+
+				<!-- Just for compile time, not runtime -->
+				<scope>provided</scope>
+			</dependency>
+
+
 		</dependencies>
 	</dependencyManagement>
 
 
 	<build>
-<!--	pluginManagement so submodules will create a plugins section without setting the version	-->
+<!-- TODO:	pluginManagement so submodules will create a plugins section without setting the version	-->
 <!--	but setting any property or goals for the task "spring-boot-maven-plugin" itself	-->
 <!--	spring-boot-maven-plugin, It can create executable archive files such as Jar files or War files, that contain all application
 dependencies, and can be run with a single java -jar command.
 This behavior comes by just including the plugin itself, because it is pre-configured to create target
 runnable jar.
-In addition, this plugin helps to run Spring boot applications, generate build informations,
+In addition, this plugin helps to run Spring boot applications, generate build information,
 and start your spring boot application prior to running integration tests.
 And finally, it helps to create docker images with the build-image goal, which comes with spring boot
 2.3.0 release.
@@ -80,7 +111,7 @@ lectures.	-->
 		</pluginManagement>
 		<plugins>
 			<plugin>
-<!--	By default, maven uses Java 1.6 version for source and target settings.
+<!-- TODO:	By default, maven uses Java 1.6 version for source and target settings.
 	And since we need to use Java 21, we will use maven compiler plugin to set this property.
 	is outside pluginManagement as we need the plugin app wide, so we can define it here to be used in submodules
 	without override-->
@@ -88,8 +119,8 @@ lectures.	-->
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>${maven-compiler-plugin.version}</version>
 				<configuration>
-<!--	Starting from java 9 we have to use the release property. Instead of source and target	-->
-				<release>21</release>
+<!-- TODO:	Starting from java 9 we have to use the release property. Instead of source and target	-->
+				<release>${java.version}</release>
 				</configuration>
 			</plugin>
 		</plugins>

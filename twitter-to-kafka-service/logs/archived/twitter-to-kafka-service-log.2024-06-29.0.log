@@ -1,0 +1,5 @@
+2024-06-29 08:39:20 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 21.0.3 with PID 18136 (C:\Users\34634\IdeaProjects\KafkaElasticMicroLesson\microservices-base\twitter-to-kafka-service\target\classes started by 34634 in C:\Users\34634\IdeaProjects\KafkaElasticMicroLesson\microservices-base)
+2024-06-29 08:39:20 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-29 08:39:20 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.159 seconds (process running for 1.929)
+2024-06-29 08:39:20 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - App starting.........
+2024-06-29 08:39:20 [main] INFO  c.m.b.t.t.k.s.TwitterToKafkaServiceApplication - [Java, kafka, Spring, Microservices, Elasticsearch]
